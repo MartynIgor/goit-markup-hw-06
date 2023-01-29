@@ -970,8 +970,9 @@ body {
     border: 1.25px solid var(--dark);
     border-radius: 2px;
     flex: none;
-    order: 0;
     flex-grow: 0;
+    position: absolute;
+    /* z-index: 1; */
 }
 
 .checkbox:active,

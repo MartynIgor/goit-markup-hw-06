@@ -251,7 +251,7 @@
             <div class="footer-subscribe">
                 <p class="sm">Subscribe</p>
                 <form class="sub-wrap">
-                    <input type="email" class="footer-input" placeholder="E-mail">
+                    <input type="email" id="email" class="footer-input" placeholder="E-mail">
                     <button aria-label="send" type="submit" class="btn sub-btn">Subscribe
                         <svg class="icon-subscribe" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
@@ -275,7 +275,7 @@
                 <div class="form-group name">
                     <label class="form-label" for="name"><span class="form-group-name">Name</span></label>
                     <div class="input-wrap">
-                        <input type="text" class="modal-input" required>
+                        <input type="text" id="name" name="name" class="modal-input" required>
                         <svg class="modal-icon" width="12" height="12">
                                 <use href="./images/icons.svg#icon-person"></use>
                             </svg>
@@ -284,7 +284,7 @@
                 <div class="form-group tel-number">
                     <label class="form-label" for="tel-number"><span class="form-group-text">Phone</span></label>
                     <div class="input-wrap">
-                        <input type="tel" class="modal-input" required>
+                        <input type="tel" id="phone" class="modal-input" required>
                         <svg class="modal-icon" width="13" height="13">
                                 <use href="./images/icons.svg#icon-tel"></use>
                             </svg>
@@ -293,7 +293,7 @@
                 <div class="form-group email">
                     <label class="form-label" for="email"><span class="form-group-text">Email</span></label>
                     <div class="input-wrap">
-                        <input type="email" class="modal-input" required>
+                        <input type="email" id="email" class="modal-input" required>
                         <svg class="modal-icon" width="15" height="12">
                                 <use href="./images/icons.svg#icon-email"></use>
                             </svg>
@@ -305,14 +305,16 @@
                 </div>
                 <div class="form-agree">
                     <label class="text-agree">
-                            <input type="checkbox" class="checkbox-input" name="privacy" id="privacy" value="true" required hidden="">
+                        <input type="checkbox" class="checkbox-input" name="privacy" id="privacy" value="true" required >
                             <span class="checkbox"> 
                                 <svg class="modal-check-icon" width="16" height="16">
                                 <use href="./images/icons.svg#icon-check"></use>
                                 </svg>
                             </span>
-                            <span class="agree-text">I accept the terms and conditions of the <a href="#">Privacy Policy</a></span>
-                        </label>
+                            <span class="agree-text">I accept the terms and conditions of the 
+                                <a href="#">Privacy Policy</a>
+                            </span>
+                    </label>
                 </div>
                 <button type="submit" class="btn modal-btn">Send</button>
             </form>
