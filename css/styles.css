@@ -972,7 +972,7 @@ body {
     flex: none;
     flex-grow: 0;
     position: absolute;
-    /* z-index: 1; */
+    z-index: -1;
 }
 
 .checkbox:active,
@@ -988,6 +988,7 @@ body {
 }
 
 .text-agree {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-grow: 0;
