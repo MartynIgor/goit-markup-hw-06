@@ -568,7 +568,6 @@ h2 {
 
 .studio-item {
   flex-basis: calc(100% - 72px);
-  text-align: center;
 }
 
 .studio-benefit {
@@ -576,7 +575,7 @@ h2 {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: left;
   text-transform: capitalize;
   color: var(--dark);
 
@@ -595,8 +594,6 @@ h2 {
   .studio-section {
     padding-top: 96px;
     padding-bottom: 96px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 
   .studio-list {
@@ -689,6 +686,7 @@ h2 {
 .team-textname {
   align-items: center;
   padding-top: 32px;
+  padding-bottom: 32px;
   background-color: var(--white);
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -733,7 +731,6 @@ h2 {
 .team-svg-box {
   display: flex;
   gap: 24px;
-  padding-bottom: 32px;
   margin-top: 8px;
   padding-left: 16px;
   padding-right: 16px;
@@ -766,9 +763,14 @@ h2 {
     flex-wrap: wrap;
     row-gap: 64px;
     column-gap: 24px;
-
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team-list {
+    row-gap: 72px;
   }
 }
 
@@ -955,7 +957,6 @@ h2 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--border-color);
-
   width: 288px;
 }
 
@@ -974,12 +975,20 @@ h2 {
   margin-right: auto;
 }
 
+@media screen and (max-width: 786px) {
+  .footer-logo {
+    display: block;
+    text-align: center;
+  }
+}
+
 .footer-logo .logo-part-two-two {
   color: var(--border-color);
 }
 
 .footer-svg-box {
   margin-top: 72px;
+  margin-bottom: 72px;
 }
 
 .footer-icons-box {
@@ -1018,7 +1027,6 @@ h2 {
 }
 
 .subscribe-text {
-  margin-top: 72px;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -1030,7 +1038,7 @@ h2 {
 
 .footer-form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 24px;
 }
@@ -1058,7 +1066,6 @@ h2 {
 }
 
 .footer-subscribe-button {
-  margin-top: 16px;
   width: 165px;
   height: 40px;
   display: flex;
@@ -1080,16 +1087,16 @@ h2 {
   fill: var(--white);
 }
 
-@media screen and (min-width: 768px) {
-  .page-footer {
-    padding-left: 92px;
-    padding-right: 92px;
-  }
+/* Tablet */
 
+@media screen and (min-width: 768px) {
   .footer-box {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
+    row-gap: 72px;
+    padding: 0 108px;
+    align-items: baseline;
   }
 
   .footer-text {
@@ -1121,7 +1128,13 @@ h2 {
   .footer-subscribe-button {
     align-self: self-end;
   }
+  .footer-email-input {
+    width: 264px;
+    opacity: 0.3;
+  }
 }
+
+/* Desktop */
 
 @media screen and (min-width: 1158px) {
   .page-footer {
@@ -1131,6 +1144,7 @@ h2 {
 
   .footer-box {
     gap: 0;
+    padding: 0 15px;
   }
 
   .footer-email-input-box {
@@ -1156,8 +1170,6 @@ h2 {
 
   .footer-subscribe-button {
     align-self: normal;
-    margin-top: 54px;
-    margin-left: 24px;
   }
 
   .subscribe-text {
@@ -1205,21 +1217,16 @@ h2 {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 288px;
   min-height: 623px;
   border-radius: 4px;
-
   transform: translate(-50%, -50%);
-
   box-shadow:
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: var(--modal);
-
-  padding: 72px 24px 24px 24px;
-
+  padding: 72px 16px 24px 16px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1395,6 +1402,7 @@ h2 {
   .modal {
     width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px 24px;
   }
 }
 
