@@ -1038,7 +1038,7 @@ h2 {
 
 .footer-form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   gap: 24px;
 }
@@ -1132,6 +1132,9 @@ h2 {
     width: 264px;
     opacity: 0.3;
   }
+  .footer-form {
+    flex-direction: row;
+  }
 }
 
 /* Desktop */
@@ -1160,9 +1163,9 @@ h2 {
     margin-left: 120px;
   }
 
-  .footer-form {
+  /* .footer-form {
     flex-direction: row;
-  }
+  } */
 
   .footer-box {
     flex-wrap: nowrap;
